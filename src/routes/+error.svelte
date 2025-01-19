@@ -1,4 +1,12 @@
-<p class="prompt container">Choose a course or group from the menu to get started.</p>
+<script lang="ts">
+	import { page } from '$app/state';
+</script>
+
+<title>{page.status} – {page.error?.message}</title>
+<div class="error container">
+	<h1 class="title">{page.status}</h1>
+	<p class="message">{page.error?.message}</p>
+</div>
 
 <style lang="scss">
 	@use '@material/theme' with (
@@ -30,9 +38,16 @@
 	);
 	@use '@material/card';
 
-	.prompt {
+	.error {
 		padding-top: 2em;
 		padding-bottom: 2em;
-		@include typography.typography(subtitle1);
+		.title {
+			@include typography.typography(headline3);
+			margin: 0;
+		}
+		.message {
+			@include typography.typography(headline5);
+			margin: 0;
+		}
 	}
 </style>

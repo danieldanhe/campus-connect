@@ -1,38 +1,9 @@
-# sv
+# CampusConnect
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+CampusConnect is a dynamic scheduling assistant designed to simplify time management and prioritization. With an intuitive interface and smart functionality, the app lets users create and manage their tutoring session schedule with ease. It is built for students, tutors, and administrators in groups that manage tutoring services for a number of classes, such as honour societies. Students can add classes and request for tutoring in relation to a class.
 
-## Creating a project
+Users can customise their schedules for each day of the week, organising activities into categories such as “Flex”, “Lunch”, and “After School.” The app supports quick updates, letting users toggle activity statuses to match real-time changes in plans. Additionally, an engaging design and frequent updates also make it easier for students, tutors, and administrators to understand what is going on and stay on top of their schedule.
 
-If you're seeing this, you've probably already done this step. Congrats!
+While most honour societies today take tutoring requests through a form and can organise this through manual integration, this web app makes it easier to save and communicate free times for each student, and also ensures that tutoring requests are satisfied within reasonable periods of time.
 
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Built with SvelteKit. Not complete
